@@ -1,5 +1,14 @@
 import { config } from "dotenv";
 
-config({path : `.env.${process.env.NODE_ENV || "development"}.local`});
+// Load environment variables based on the current NODE_ENV value
+// If NODE_ENV is not set, it defaults to "development"
+config({ path: `.env.${process.env.NODE_ENV || "development"}.local` });
 
-export const {PORT , NODE_ENV} = process.env;
+/**
+ * Extract environment variables from process.env
+ * 
+ * - PORT: The port number the server will run on.
+ * - NODE_ENV: The current environment (e.g., "development", "production", "test").
+ * - DB_URI: The database connection string.
+ */
+export const { PORT, NODE_ENV, DB_URI } = process.env;
