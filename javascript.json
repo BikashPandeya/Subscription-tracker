@@ -1,0 +1,23 @@
+{
+    "Console Log": {
+        "prefix": "clog",
+        "body": [
+            "console.log('$1:', ${1});"
+        ],
+        "description": "Console log with variable name"
+    },
+    "Console Log Object": {
+        "prefix": "clogo",
+        "body": [
+            "console.log('$1:', JSON.stringify(${1}, null, 2));"
+        ],
+        "description": "Console log object with formatting"
+    },
+    "Console Table": {
+        "prefix": "clogt",
+        "body": [
+            "console.table($1);"
+        ],
+        "description": "Console table for arrays/objects"
+    }
+} 

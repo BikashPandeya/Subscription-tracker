@@ -55,3 +55,4 @@ const authorize = async (req, res, next) => {
 
 // Export the authorize middleware function
 export default authorize;
+
