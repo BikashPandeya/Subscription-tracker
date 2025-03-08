@@ -85,6 +85,6 @@ subscriptionSchema.pre("save" , function(next){
     next();
 })
 
-const subscription = mongoose.model('Subscription' , subscriptionSchema);
+const Subscription = mongoose.model('Subscription' , subscriptionSchema);
 
-export default subscription;
+export default Subscription;
